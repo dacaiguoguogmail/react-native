@@ -98,4 +98,5 @@ Pod::Spec.new do |s|
   s.dependency "React-jsiexecutor", version
   s.dependency "Yoga"
   s.dependency "glog"
+  s.script_phase = { :name => 'Copy React', :script => 'cp -r "${PODS_CONFIGURATION_BUILD_DIR}/React-Core" "${PODS_CONFIGURATION_BUILD_DIR}/React"' }
 end
